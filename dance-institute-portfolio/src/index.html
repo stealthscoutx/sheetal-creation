@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Institute Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Dance Institute</h1>
+    </header>
+    <main>
+        <section id="image-slider">
+            <h2>Our Dance Moments</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="images/image1.jpg" alt="Dance Image 1">
+                    <img src="images/image2.jpg" alt="Dance Image 2">
+                    <img src="images/image3.jpg" alt="Dance Image 3">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        <section id="student-plans">
+            <h2>Student Plans</h2>
+            <div class="plan">
+                <h3>Beginner Plan</h3>
+                <p>Perfect for those just starting their dance journey.</p>
+                <p>Price: $100/month</p>
+            </div>
+            <div class="plan">
+                <h3>Intermediate Plan</h3>
+                <p>For dancers looking to improve their skills.</p>
+                <p>Price: $150/month</p>
+            </div>
+            <div class="plan">
+                <h3>Advanced Plan</h3>
+                <p>Designed for experienced dancers aiming for excellence.</p>
+                <p>Price: $200/month</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
