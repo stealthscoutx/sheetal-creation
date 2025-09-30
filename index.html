@@ -3,42 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dance Institute Portfolio</title>
+    <title>Sheetal Creations – Dance Studio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Dance Institute</h1>
+    <header class="studio-header">
+        <h1>Sheetal Creations – Dance Studio</h1>
+        <p>By – <span class="highlight">Sheetal Sivangi</span> – Eminent Odissi dancer (CM Awardee, Gold Medalist)</p>
     </header>
     <main>
+        <section class="plans-section">
+            <div class="plan-card">
+                <h2>Group A<br><span>Beginner</span></h2>
+                <p class="subtitle">No Prior Training</p>
+                <ul>
+                    <li>Steppings</li>
+                    <li>Hasta Mudras</li>
+                    <li>Basics of Odissi and Postures</li>
+                </ul>
+                <p class="fees"><strong>Fees</strong><br>2500/- INR per month</p>
+                <div class="timing">
+                    <strong>Online:</strong> Mon, Wed, Thu – 4 PM to 5 PM<br>
+                    <strong>Offline:</strong> Sat, Sun – 8 AM to 9 AM
+                </div>
+            </div>
+            <div class="plan-card">
+                <h2>Group B<br><span>Intermediate</span></h2>
+                <p class="subtitle">Min 2yrs Training in Odissi</p>
+                <ul>
+                    <li>Ganesh Vandana</li>
+                    <li>Vasant Pallavi</li>
+                    <li>Postures and Body Conditioning</li>
+                </ul>
+                <p class="fees"><strong>Fees</strong><br>4000/- INR per month</p>
+                <div class="timing">
+                    <strong>Online:</strong> Mon, Wed, Thu – 5 PM to 6 PM<br>
+                    <strong>Offline:</strong> Sat, Sun – 9 AM to 10 AM
+                </div>
+            </div>
+            <div class="plan-card">
+                <h2>Group C<br><span>Advanced</span></h2>
+                <p class="subtitle">Min 5yrs Training in Odissi</p>
+                <ul>
+                    <li>Megh Pallavi</li>
+                    <li>Mallimala Shyama Ku Debi (Gita Govinda Abhinaya)</li>
+                    <li>Posture Perfection</li>
+                </ul>
+                <p class="fees"><strong>Fees</strong><br>4500/- INR per month</p>
+                <div class="timing">
+                    <strong>Online:</strong> Mon, Wed, Thu – 6 PM to 7 PM<br>
+                    <strong>Offline:</strong> Sat, Sun – 10 AM to 11 AM
+                </div>
+            </div>
+        </section>
+        <section class="note-contact">
+            <p class="note"><strong>Note:</strong> Offline classes are based on availability of number of students in a specific area/apartment club house.</p>
+            <p class="contact">
+                For more details – 6372690767 / 9124100888<br>
+                Email – info.sheetalcreations@gmail.com
+            </p>
+        </section>
         <section id="image-slider">
             <h2>Our Dance Moments</h2>
             <div class="slider">
                 <div class="slides">
-                    <img src="images/image1.jpg" alt="Dance Image 1">
-                    <img src="images/image2.jpg" alt="Dance Image 2">
-                    <img src="images/image3.jpg" alt="Dance Image 3">
+                    <img src="images/image1.jpg" alt="Dance Image 1" class="slide">
+                    <img src="images/image2.jpg" alt="Dance Image 2" class="slide">
+                    <img src="images/image3.jpg" alt="Dance Image 3" class="slide">
                 </div>
-                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-                <button class="next" onclick="changeSlide(1)">&#10095;</button>
-            </div>
-        </section>
-        <section id="student-plans">
-            <h2>Student Plans</h2>
-            <div class="plan">
-                <h3>Beginner Plan</h3>
-                <p>Perfect for those just starting their dance journey.</p>
-                <p>Price: $100/month</p>
-            </div>
-            <div class="plan">
-                <h3>Intermediate Plan</h3>
-                <p>For dancers looking to improve their skills.</p>
-                <p>Price: $150/month</p>
-            </div>
-            <div class="plan">
-                <h3>Advanced Plan</h3>
-                <p>Designed for experienced dancers aiming for excellence.</p>
-                <p>Price: $200/month</p>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
             </div>
         </section>
     </main>

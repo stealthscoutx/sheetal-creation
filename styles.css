@@ -1,66 +1,206 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #23281c;
+    color: #fff;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
+.studio-header {
+    background: #a23c1a;
+    color: #fff;
+    padding: 30px 10px 15px 10px;
     text-align: center;
+    font-family: 'Pacifico', cursive, Arial, sans-serif;
 }
 
-main {
-    padding: 20px;
+.studio-header h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
+    font-family: 'Pacifico', cursive, Arial, sans-serif;
+}
+
+.studio-header .highlight {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.studio-header p {
+    font-size: 1.1em;
+    font-style: italic;
+    margin: 0;
+}
+
+.plans-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 40px 0 20px 0;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background: #b2a98f;
+    color: #23281c;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 25px 20px;
+    width: 300px;
+    min-width: 250px;
+    text-align: left;
+    position: relative;
+}
+
+.plan-card h2 {
+    font-size: 1.4em;
+    margin: 0 0 5px 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #a23c1a;
+    font-weight: bold;
+}
+
+.plan-card h2 span {
+    font-size: 1em;
+    color: #23281c;
+    font-weight: normal;
+}
+
+.plan-card .subtitle {
+    font-size: 0.95em;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.plan-card ul {
+    margin: 0 0 10px 0;
+    padding-left: 18px;
+}
+
+.plan-card li {
+    margin-bottom: 6px;
+    font-size: 1em;
+}
+
+.plan-card .fees {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #a23c1a;
+}
+
+.plan-card .timing {
+    font-size: 0.98em;
+    background: #fff4e6;
+    color: #23281c;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.note-contact {
+    margin: 30px auto 10px auto;
+    max-width: 900px;
+    text-align: left;
+}
+
+.note {
+    font-size: 1em;
+    font-style: italic;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.contact {
+    font-size: 1.1em;
+    color: #fff;
+    background: #a23c1a;
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
 }
 
 #image-slider {
     position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-#image-slider img {
-    width: 100%;
-    display: none;
-}
-
-#image-slider img.active {
-    display: block;
-}
-
-#plans {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.plan {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    width: 30%;
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    background: #fff4e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 20px 0 10px 0;
     text-align: center;
 }
 
-.plan h3 {
-    color: #4CAF50;
+#image-slider h2 {
+    color: #a23c1a;
+    margin-bottom: 10px;
 }
 
-.plan p {
-    margin: 10px 0;
+.slider {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
+.slides {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.10);
+}
+
+.slide.active {
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #a23c1a;
+    color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 1.5em;
     cursor: pointer;
+    z-index: 2;
+    opacity: 0.85;
 }
 
-button:hover {
-    background-color: #45a049;
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background: #d65c1a;
+}
+
+@media (max-width: 900px) {
+    .plans-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #image-slider {
+        max-width: 98vw;
+    }
 }
