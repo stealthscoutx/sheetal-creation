@@ -12,6 +12,79 @@
         <p>By – <span class="highlight">Sheetal Sivangi</span> – Eminent Odissi dancer (CM Awardee, Gold Medalist)</p>
     </header>
     <main>
+<title>Image Slider</title>
+    <style>
+        #image-slider {
+            text-align: center;
+            position: relative;
+        }
+
+        #image-slider h2 {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+
+    <body>
+        <section id="image-slider">
+            <h2>Our Dance Moments</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="images/image1.jpg" alt="Dance Image 1" class="slide">
+                    <img src="images/image2.jpg" alt="Dance Image 2" class="slide">
+                    <img src="images/image3.jpg" alt="Dance Image 3" class="slide">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+    </body>
+</html>
+
         <section class="plans-section">
             <div class="plan-card">
                 <h2>Group A<br><span>Beginner</span></h2>
@@ -63,18 +136,7 @@
                 Email – info.sheetalcreations@gmail.com
             </p>
         </section>
-        <section id="image-slider">
-            <h2>Our Dance Moments</h2>
-            <div class="slider">
-                <div class="slides">
-                    <img src="images/image1.jpg" alt="Dance Image 1" class="slide">
-                    <img src="images/image2.jpg" alt="Dance Image 2" class="slide">
-                    <img src="images/image3.jpg" alt="Dance Image 3" class="slide">
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
+
     </main>
     <script src="script.js"></script>
 </body>
