@@ -3,141 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sheetal Creations – Dance Studio</title>
+    <title style="font-family: 'Segoe UI', Arial, sans-serif;">Sheetal Creations Dance Studio</title>
+    <link href="https://fonts.googleapis.com/css?family=Segoe+UI:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="studio-header">
-        <h1>Sheetal Creations – Dance Studio</h1>
-        <p>By – <span class="highlight">Sheetal Sivangi</span> – Eminent Odissi dancer (CM Awardee, Gold Medalist)</p>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="#top">
+                <!-- <img src="images/logo.png" alt="Sheetal Creation Dance Studio logo" class="brand-logo"> -->
+                <span class="brand-text">Sheetal Creations Dance Studio</span>
+            </a>
+            <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false">☰</button>
+            <nav class="site-nav" role="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#odissi">Odissi</a></li>
+                    <li><a href="#teacher">Teacher</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a class="btn btn-primary nav-cta" href="#contact">Contact Us</a>
+            </nav>
+        </div>
     </header>
-    <main>
-<title>Image Slider</title>
-    <style>
-        #image-slider {
-            text-align: center;
-            position: relative;
-        }
 
-        #image-slider h2 {
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 10;
-            background-color: rgba(255, 255, 255, 0.7);
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .slider {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 10;
-        }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-    </style>
-
-    <body>
-        <section id="image-slider">
-            <h2>Our Dance Moments</h2>
-            <div class="slider">
-                <div class="slides">
-                    <img src="images/image1.jpg" alt="Dance Image 1" class="slide">
-                    <img src="images/image2.jpg" alt="Dance Image 2" class="slide">
-                    <img src="images/image3.jpg" alt="Dance Image 3" class="slide">
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <h1>Indian Dance is for everyone</h1>
+                <p>Learn the Odissi technique in a short time, in an uncomplicated and enriching way.</p>
+                <div class="hero-actions">
+                    <a href="#courses" class="btn btn-primary">Our Courses</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
                 </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
             </div>
-        </section>
-    </body>
-</html>
+            <div class="hero-media">
+                <img src="images/hero.jpg" alt="Odissi Dance Image">
+            </div>
+        </div>
+    </section>
 
-        <section class="plans-section">
-            <div class="plan-card">
-                <h2>Group A<br><span>Beginner</span></h2>
-                <p class="subtitle">No Prior Training</p>
-                <ul>
-                    <li>Steppings</li>
-                    <li>Hasta Mudras</li>
-                    <li>Basics of Odissi and Postures</li>
+    <!-- Odissi -->
+    <section id="odissi" class="section">
+        <div class="container">
+            <header class="section-head">
+                <h2>Odissi</h2>
+                <p>Odissi is a dance to be enjoyed by all those who wish to have an experience that goes beyond entertainment, whether as a spectator or as a practitioner.</p>
+            </header>
+            <div class="split">
+                <div class="split-media">
+                    <img src="images/image1.jpg" alt="Odissi Dance">
+                </div>
+                <div class="split-copy">
+                    <p>Odissi is literally an adventure that puts us in the role of explorer along the paths of our own body, mind and spirit. It is a style of classical and expressive dance originating from the state of Orissa, India. An art that combines dance, theater, music and literature in a sensitive and poetic way.</p>
+                    <a href="#courses" class="text-link">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teacher -->
+    <section id="teacher" class="section alt">
+        <div class="container split">
+            <div class="split-media">
+                <img src="images/image2.jpg" alt="Sheetal Sivangi">
+            </div>
+            <div class="split-copy">
+                <h2>Sheetal Sivangi</h2>
+                <p>She is an accomplished Odissi dancer with over 18 years of experience. A Gold Medalist in Classical Dance, she has performed at numerous national festivals and has been honoured with prestigious titles such as Nritya Shiromani and Nrityashree National Award.</p>
+                <p>Along with her rich performance journey, she has been a dedicated dance educator, nurturing students across India and abroad. </p>
+                <!-- <a href="#contact" class="text-link">Meet the teacher →</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="section">
+        <div class="container">
+            <header class="section-head">
+                <h2>Our Courses</h2>
+                <p>From beginner to advanced, explore our range of Odissi dance courses.</p>
+            </header>
+            <div class="cards">
+                <article class="card">
+                    <h3>Beginner Classes</h3>
+                    <p>Introduction to Odissi dance through hand gestures and movements.</p>
+                    <a href="https://forms.gle/njrff7NEKapLTAu99" class="text-link" target="_blank" rel="noopener">Learn more →</a>
+                </article>
+                <article class="card">
+                    <h3>Intermediate Classes</h3>
+                    <p>Build on your foundation with more complex techniques and choreography.</p>
+                    <a href="https://forms.gle/xMCAkuedv115ToXA8" class="text-link" target="_blank" rel="noopener">Learn more →</a>
+                </article>
+                <article class="card">
+                    <h3>Advanced Classes</h3>
+                    <p>Master the art of Odissi with intensive practice and personalized training.</p>
+                    <a href="https://forms.gle/PsrgxtDgc2np9SrYA" class="text-link" target="_blank" rel="noopener">Learn more →</a>
+                </article>
+                <article class="card">
+                    <h3>Workshops</h3>
+                    <p>Master the art of Odissi with intensive short workshops and personalized training.</p>
+                    <a href="https://forms.gle/your-google-form-link" class="text-link" target="_blank" rel="noopener">Coming Soon →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Sheetal Creations Dance Studio</h4>
+                <p>Odissi Dance & Classes</p>
+                <p class="muted">© <span id="year"></span> Sheetal Creations Dance Studio. All rights reserved.</p>
+            </div>
+            <nav>
+                <h5>Menu</h5>
+                <ul class="footer-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#odissi">Odissi</a></li>
+                    <li><a href="#teacher">Teacher</a></li>
+                    <li><a href="#courses">Courses</a></li>
                 </ul>
-                <p class="fees"><strong>Fees</strong><br>2500/- INR per month</p>
-                <div class="timing">
-                    <strong>Online:</strong> Mon, Wed, Thu – 4 PM to 5 PM<br>
-                    <strong>Offline:</strong> Sat, Sun – 8 AM to 9 AM
-                </div>
-            </div>
-            <div class="plan-card">
-                <h2>Group B<br><span>Intermediate</span></h2>
-                <p class="subtitle">Min 2yrs Training in Odissi</p>
-                <ul>
-                    <li>Ganesh Vandana</li>
-                    <li>Vasant Pallavi</li>
-                    <li>Postures and Body Conditioning</li>
+            </nav>
+            <div>
+                <h5>Connect</h5>
+                <ul class="social">
+                    <li>
+                        <a href="https://www.instagram.com/sheetalcreationsdancestudio?igsh=MWNya2QxYXEzNWlwbg==" target="_blank" rel="noopener" aria-label="Instagram">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://chat.whatsapp.com/HjbH979NiGoHkd8cjDtNsE" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            WhatsApp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info.sheetalcreations@gmail.com" aria-label="Email">
+                            Email
+                        </a>
+                    </li>
                 </ul>
-                <p class="fees"><strong>Fees</strong><br>4000/- INR per month</p>
-                <div class="timing">
-                    <strong>Online:</strong> Mon, Wed, Thu – 5 PM to 6 PM<br>
-                    <strong>Offline:</strong> Sat, Sun – 9 AM to 10 AM
-                </div>
+                <a class="btn btn-outline small" href="mailto:info.sheetalcreations@gmail.com">Contact Us</a>
             </div>
-            <div class="plan-card">
-                <h2>Group C<br><span>Advanced</span></h2>
-                <p class="subtitle">Min 5yrs Training in Odissi</p>
-                <ul>
-                    <li>Megh Pallavi</li>
-                    <li>Mallimala Shyama Ku Debi (Gita Govinda Abhinaya)</li>
-                    <li>Posture Perfection</li>
-                </ul>
-                <p class="fees"><strong>Fees</strong><br>4500/- INR per month</p>
-                <div class="timing">
-                    <strong>Online:</strong> Mon, Wed, Thu – 6 PM to 7 PM<br>
-                    <strong>Offline:</strong> Sat, Sun – 10 AM to 11 AM
-                </div>
-            </div>
-        </section>
-        <section class="note-contact">
-            <p class="note"><strong>Note:</strong> Offline classes are based on availability of number of students in a specific area/apartment club house.</p>
-            <p class="contact">
-                For more details – 6372690767 / 9124100888<br>
-                Email – info.sheetalcreations@gmail.com
-            </p>
-        </section>
+        </div>
+    </footer>
 
-    </main>
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
     <script src="script.js"></script>
 </body>
 </html>
