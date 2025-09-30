@@ -5,12 +5,12 @@ This project is a portfolio website for a dance institute. It showcases the inst
 
 ## Project Structure
 ```
-dance-institute-portfolio
-├── src
-│   ├── index.html          # Main HTML document for the website
-│   ├── styles.css         # CSS styles for the website
-│   ├── script.js          # JavaScript for image slider functionality
-│   └── images             # Directory for slider images
+sheetal-creation
+
+├── index.html          # Main HTML document for the website
+├── styles.css         # CSS styles for the website
+├── script.js          # JavaScript for image slider functionality
+├── images             # Directory for slider images
 ├── README.md              # Documentation for the project
 ```
 
