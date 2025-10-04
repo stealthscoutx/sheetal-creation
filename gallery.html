@@ -14,23 +14,13 @@
             <div class="container">
                 <h2>Gallery</h2>
                 <div class="gallery-grid">
-                    <img src="/images/galleryfiles/1.jpeg" alt="Gallery Image 1">
-                    <img src="/images/galleryfiles/2.jpeg" alt="Gallery Image 2">
-                    <img src="/images/galleryfiles/3.jpeg" alt="Gallery Image 3">
-                    <img src="/images/galleryfiles/4.jpeg" alt="Gallery Image 4">
-                    <img src="/images/galleryfiles/5.jpeg" alt="Gallery Image 5">
-                    <img src="/images/galleryfiles/6.jpeg" alt="Gallery Image 6">
-                    <img src="/images/galleryfiles/7.jpeg" alt="Gallery Image 7">
-                    <img src="/images/galleryfiles/8.jpeg" alt="Gallery Image 8">
-                    <img src="/images/galleryfiles/9.jpeg" alt="Gallery Image 9">
-                    <img src="/images/galleryfiles/10.jpeg" alt="Gallery Image 10">
-                    <img src="/images/galleryfiles/11.jpeg" alt="Gallery Image 11">
-                </div>
-            </div>
-            <div class="youtube-section">
-                <h3>Follow us on YouTube</h3>
-                <button id="show-channel" class="btn btn-primary">Visit Channel</button>
-                <div id="youtube-embed" style="display:none; margin-top:16px;">
+                    <img src="images/galleryfiles/1.jpeg" alt="Gallery Image 1">
+                    <img src="images/galleryfiles/2.jpeg" alt="Gallery Image 2">
+                    <img src="images/galleryfiles/3.jpeg" alt="Gallery Image 3">
+                    <img src="images/galleryfiles/4.jpeg" alt="Gallery Image 4">
+                    <img src="images/galleryfiles/5.jpeg" alt="Gallery Image 5">
+                    <img src="images/galleryfiles/6.jpeg" alt="Gallery Image 6">
+                    <img src="images/galleryfiles/7.jpeg" alt="Gallery Image 7">
                 </div>
             </div>
         </section>
@@ -96,70 +86,6 @@
         }
     });
 
-    //     // YouTube Channel Reveal (obfuscated)
-    //     const showChannelBtn = document.getElementById('show-channel');
-    //     const youtubeEmbed = document.getElementById('youtube-embed');
-    //     const channelId = ['U', 'C', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x']; // Replace with your actual channel ID, obfuscated
-
-    //     showChannelBtn.addEventListener('click', () => {
-    //         const id = channelId.join('');
-    //         youtubeEmbed.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed?listType=user_uploads&list=UCvqOs5Le7lfWj1lkkXdbZ9Q" title="YouTube channel" frameborder="0" allowfullscreen></iframe>
-    //         <p><a href="https://www.youtube.com/channel/UCvqOs5Le7lfWj1lkkXdbZ9Q" target="_blank" rel="noopener">Go to our YouTube Channel</a></p>`;
-    //         youtubeEmbed.style.display = 'block';
-    //         showChannelBtn.style.display = 'none';
-    // });
-
-    // YouTube Channel Reveal (obfuscated for safety)
-    const showChannelBtn = document.getElementById('show-channel');
-    const youtubeEmbed = document.getElementById('youtube-embed');
-
-    // Store channel ID as obfuscated array
-    const channelId = [
-        'U', 'C', 'v', 'q', 'O', 's', '5', 'L', 'e', '7',
-        'l', 'f', 'W', 'j', '1', 'l', 'k', 'k', 'X', 'd',
-        'b', 'Z', '9', 'Q'
-    ];
-
-    // Allowlist validation: YouTube channel IDs always start with "UC" and are 24 chars long
-    // See: https://developers.google.com/youtube/v3/docs/channels#id for official format details
-    function isValidChannelId(id) {
-        const regex = /^UC[a-zA-Z0-9_-]{22}$/;
-        return regex.test(id);
-    }
-
-    showChannelBtn.addEventListener('click', () => {
-        const id = channelId.join('');
-        if (!isValidChannelId(id)) {
-            console.error("Invalid YouTube Channel ID");
-            youtubeEmbed.innerHTML = '<p style="color:red;">Sorry, the YouTube Channel ID is invalid. Please try again later.</p>';
-            youtubeEmbed.style.display = 'block';
-            return;
-        }
-
-        // Build safe iframe and link elements instead of raw HTML injection
-        const iframe = document.createElement('iframe');
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.title = "YouTube channel";
-        iframe.frameBorder = "0";
-        iframe.setAttribute('allowfullscreen', '');
-        iframe.src = `https://www.youtube.com/embed?listType=user_uploads&list=${id}`;
-        const link = document.createElement('a');
-        link.href = `https://www.youtube.com/channel/${id}`;
-        link.target = "_blank";
-        link.rel = "noopener";
-        link.textContent = "Go to our YouTube Channel";
-
-        youtubeEmbed.innerHTML = ''; // clear existing content
-        youtubeEmbed.appendChild(iframe);
-
-        const p = document.createElement('p');
-        p.appendChild(link);
-        youtubeEmbed.appendChild(p);
-
-        youtubeEmbed.style.display = 'block';
-        showChannelBtn.style.display = 'none';
-    });
     </script>
 </body>
 </html>

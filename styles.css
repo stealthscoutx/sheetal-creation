@@ -451,15 +451,3 @@ a:hover {
     transform: scale(1.04);
     box-shadow: 0 4px 24px rgba(202,160,107,0.18);
 }
-
-.youtube-section {
-    margin: 32px 0 24px 0;
-    text-align: center;
-}
-.youtube-section h3 {
-    color: var(--brand);
-    margin-bottom: 10px;
-}
-.youtube-section .btn {
-    font-size: 1.1em;
-}
