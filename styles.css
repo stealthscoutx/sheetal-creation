@@ -451,3 +451,35 @@ a:hover {
     transform: scale(1.04);
     box-shadow: 0 4px 24px rgba(202,160,107,0.18);
 }
+
+.whatsapp-demo {
+  position: fixed;
+  top: 90px;            /* adjust if header height changes */
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 14px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 0 rgba(37, 211, 102, 0.7);
+  animation: pulse 1.5s infinite;
+  z-index: 9999;
+}
+
+.whatsapp-demo:hover {
+  background: #1ebe5d;
+}
+
+/* Flash / pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
